@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <style>
+            .border {
+                border-style: solid;
+                border-color: black;
+                border-radius: 15px;
+                padding: 5px;
+            }
+            .candy {
+                display: inline-block;
+            }
+            #bottom {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+            }
+            #vending-machine {
+                display: inline-block;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="vending-machine" class="border">
+            <div id="glass" class="border">
+                <div>
+                    <div class="candy border">
+                        <img height="100px" width="100px" src="../assets/almond_joy.jpg" alt="">
+                    </div>
+                    <div class="candy border">
+                        <img height="100px" width="100px" src="../assets/crunch.jpg" alt="">
+                    </div>
+                    <div class="candy border">
+                        <img height="100px" width="100px" src="../assets/milky_way.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="candy border">
+                        <img height="100px" width="100px" src="../assets/snickers.jpg" alt="">
+                    </div>
+                    <div class="candy border">
+                        <img height="100px" width="100px" src="../assets/twix.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                Selection: <input type="text" id="selection"><br>
+                Money: <input type="text" id="money"><br>
+                <button id="get-candy-button">Get Candy!</button>
+
+            </div>
+        </div>
+    </body>
+</html>
