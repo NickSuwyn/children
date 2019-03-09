@@ -22,10 +22,10 @@
             #vending-machine {
                 display: inline-block;
                 text-align: center;
-                background-color: #ff1111;
+                /*background-color: choose color;*/
             }
             #glass {
-                background-color: #d1e2ff;
+                /*background-color: choose color;*/
             }
         </style>
     </head>
@@ -34,26 +34,26 @@
             <div id="glass" class="border">
                 <div>
                     <div class="candy border">
-                        A1: $1.25<br>
-                        <img height="100px" width="100px" src="../assets/almond_joy.jpg">
+                        A1: <!--choose price--><br>
+                        <img height="100px" width="100px" src=""> <!-- <<< set image src-->
                     </div>
                     <div class="candy border">
-                        A2: $1.00<br>
-                        <img height="100px" width="100px" src="../assets/crunch.jpg">
+                        A2: <!--choose price--><br>
+                        <img height="100px" width="100px" src=""> <!-- <<< set image src-->
                     </div>
                     <div class="candy border">
-                        A3: $1.75<br>
-                        <img height="100px" width="100px" src="../assets/milky_way.jpg">
+                        A3: <!--choose price--><br>
+                        <img height="100px" width="100px" src=""> <!-- <<< set image src-->
                     </div>
                 </div>
                 <div>
                     <div class="candy border">
-                        B1: $1.00<br>
-                        <img height="100px" width="100px" src="../assets/snickers.jpg">
+                        B1: <!--choose price--><br>
+                        <img height="100px" width="100px" src=""> <!-- <<< set image src-->
                     </div>
                     <div class="candy border">
-                        B2: $1.50<br>
-                        <img height="100px" width="100px" src="../assets/twix.jpg">
+                        B2: <!--choose price--><br>
+                        <img height="100px" width="100px" src=""> <!-- <<< set image src-->
                     </div>
                 </div>
             </div>
@@ -69,31 +69,24 @@
         </div>
         <script>
             var selectionInput = document.getElementById('selection');
-            var moneyInput = document.getElementById('money');
-            var button = document.getElementById('get-candy-button');
-            var output = document.getElementById('output');
-            var change = document.getElementById('change');
+            //get moneyInput element from the document
+            //get button element from the document
+            //get output element from the document
+            //get change element from the document
 
             button.addEventListener('click', () => {
                 var selection = selectionInput.value;
                 var money = parseFloat(moneyInput.value);
 
-                if (selection == 'A1' && money >= 1.25) {
-                    output.src = '../assets/almond_joy.jpg';
-                    money = money - 1.25;
-                } else if (selection == "A2" && money >= 1.00) {
-                    output.src = '../assets/crunch.jpg';
-                    money = money - 1.00;
-                } else if (selection == "A3" && money >= 1.75) {
-                    output.src = '../assets/milky_way.jpg';
-                    money = money - 1.75;
-                } else if (selection == "B1" && money >= 1.00) {
-                    output.src = '../assets/snickers.jpg';
-                    money = money - 1.00;
-                } else if (selection == "B2" && money >= 1.50) {
-                    output.src = '../assets/twix.jpg';
-                    money = money - 1.50;
-                }
+                if (selection == 'A1' && money >= /*replace 0 with the price for this item*/0) {
+                    output.src = /*where is the image located?*/'';
+                    money = money - /*replace 0 with the price for this item*/0;
+                } else if (/*replace true with next option*/ true) {
+                    //set output src to the image location
+                    //subtract cost of candy from money
+                } 
+                //add the rest of the else if conditions for each candy
+                
                 selectionInput.value = '';
                 moneyInput.value = '';
                 change.value = money;
